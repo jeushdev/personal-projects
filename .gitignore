@@ -1,0 +1,9 @@
+# Ignore compiled files
+*.exe
+*.out
+*.obj
+*.json
+
+# Ignore backup files
+*.log
+*.tmp
