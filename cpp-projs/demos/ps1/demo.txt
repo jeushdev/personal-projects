@@ -1,0 +1,70 @@
+Problem Description:
+Write a complete C++ program that determines a student’s eligibility for an Academic Award based on two criteria: their Grade Weighted Average (GWA) and their Discipline Record.
+
+Instructions:
+    
+    1. Ask the user to input the student's Grade Weighted Average (GWA) as a floating-point number.
+
+    2. Ask the user to input the number of major offenses the student has committed as an integer.
+
+    3. The student is eligible for an Academic Award if and only if both of the following conditions are met:
+            The GWA is less than or equal to 2.00.
+            The student has committed zero major offenses.
+
+    4. If the student is eligible, display:
+            [GWA] - Academic Award Candidate
+
+    5. If the student is not eligible, determine the specific reason:
+
+            If the GWA is greater than 2.00 and the student has zero offenses, display:
+
+            [GWA] - Needs Improvement in Grades
+
+
+            If the GWA is less than or equal to 2.00 and the student has one or more offenses, display:
+
+            [GWA] - Needs Improvement in Discipline
+
+
+            Otherwise (the GWA is greater than 2.00 and the student has one or more offenses), display:
+
+            [GWA] - Not Eligible for Awards
+
+
+    6. The GWA must be displayed with exactly two decimal places of precision.`
+
+Sample Input 1
+
+GWA: 1.75
+Offenses: 0
+
+Sample Output 1
+
+1.75 - Academic Award Candidate
+
+Sample Input 2
+
+GWA: 2.50
+Offenses: 0
+
+Sample Output 2
+
+2.50 - Needs Improvement in Grades
+
+Sample Input 3
+
+GWA: 1.80
+Offenses: 1
+
+Sample Output 3
+
+1.80 - Needs Improvement in Discipline
+
+Sample Input 4
+
+GWA: 2.75
+Offenses: 2
+
+Sample Output 4
+
+2.75 - Not Eligible for Awards

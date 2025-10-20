@@ -8,7 +8,7 @@ int main() {
     cout << "Enter the value of n: ";
     cin >> n;
 
-    int element =fib(n);
+    int element = fib(n);
 
     cout << "The element at position " << n << " is equal to " << element << endl;
 
@@ -20,6 +20,8 @@ int fib(int n) {
         return n;
     }
     else {
-        return fib(n-1) + fib(n-2);
+        int fibonacci = fib(n-1) + fib(n-2);
+        return fibonacci;
     }
 }
+

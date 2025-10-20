@@ -1,0 +1,61 @@
+Problem Description:
+Write a complete C++ program that calculates the Simple Interest earned on a given principal amount using a function.
+
+The formula for Simple Interest is:
+
+Interest = Principal × Rate × Time
+
+Given Information:
+
+        Principal (P): Initial amount of money (double)
+        Rate (R): Annual interest rate (double, given as a percentage — e.g., 5 for 5%)
+        Time (T): Time in years (double)
+
+Program Requirements:
+
+1. Define a function named calculateInterest that accepts three arguments:
+
+        principal (P)
+        rate (R)
+        time (T)
+        The function should return the calculated interest as a double.
+
+2. Inside the function:
+
+        Convert the percentage rate to a decimal (e.g., 5% → 0.05).
+
+        Use the formula:
+        Interest = Principal × Rate × Time
+
+        Return the computed interest.
+
+3. In the main() function:
+
+        Declare and initialize the following sample values:
+
+        Principal = 10000.0  
+        Rate = 4.5  
+        Time = 2.0
+
+
+        Call the calculateInterest() function and store the result.
+        Display the Principal, Rate, Time, and Simple Interest.
+
+4. Format the output to display the interest value in fixed-point notation with four (4) decimal places of precision.
+
+
+Sample Input and Output:
+
+Sample Input:
+
+Principal: 10000
+Rate: 4.5
+Time: 2
+
+
+Sample Output:
+
+Principal: 10000
+Rate: 4.5%
+Time: 2 years
+Simple Interest: 900.0000

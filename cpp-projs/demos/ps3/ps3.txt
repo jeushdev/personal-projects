@@ -1,0 +1,39 @@
+𝐈𝐭𝐞𝐦 𝟑: 𝐅𝐮𝐧𝐜𝐭𝐢𝐨𝐧𝐬, 𝐂𝐨𝐧𝐝𝐢𝐭𝐢𝐨𝐧𝐚𝐥𝐬, 𝐋𝐨𝐨𝐩𝐬, 𝐂𝐨𝐝𝐞 𝐀𝐧𝐚𝐥𝐲𝐬𝐢𝐬 (𝟏𝟓 𝐩𝐨𝐢𝐧𝐭𝐬)
+
+Problem: Fix the Defective Sum-Even-Numbers Program
+
+The C++ program below is intended to define a function sumEvenNumbers that calculates and returns the sum of all even numbers 
+from $1$ up to a given positive integer $N$ (inclusive). However, the code contains multiple errors (syntax, logical, and 
+structural) that prevent it from compiling or running correctly.
+
+Your task is to identify and fix ALL errors so that the program runs as intended, and then write the complete, corrected code. 
+List the errors you found and how you fixed them.
+
+Expected Output for Input $N=10$:
+The sum of even numbers from 1 to 10 is: 30
+
+Initial Code (with errors):
+
+#include <iostream>
+
+// Function definition - intended to sum evens up to limit
+int sumEvenNumbers(int limit)
+{
+    int sum; // MISTAKE 1: Variable declaration
+    for (int i = 1; i <= limit; i + 1) // MISTAKE 2: Loop construct
+    {
+        if (limit % 2 == 0); // MISTAKE 3: Conditional logic
+        {
+            sum = sum + i; // MISTAKE 4: Logic/Variable use
+        }
+    }
+    return limit; // MISTAKE 5: Return value
+}
+
+void main() // MISTAKE 6: Main function signature
+{
+    int N = 10;
+    int result = sumEvenNumbers(N) // MISTAKE 7: Syntax
+
+    std.cout << "The sum of even numbers from 1 to " << N << " is: " << result << std::endl;
+}
