@@ -6,3 +6,5 @@
 # Ignore backup files
 *.log
 *.tmp
+
+.vscode/
